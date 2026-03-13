@@ -23,3 +23,9 @@ test("test mean of five numbers", () => {
   // Assert
   expect(actual).toBe(expected);
 });
+
+test("test mean of no numbers", () => {
+  const numbers: number[] = [];
+
+  expect(() => mean(numbers)).toThrow();
+});
