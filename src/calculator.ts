@@ -11,5 +11,8 @@ export function multiply(factorA: number, factorB: number): number {
 }
 
 export function divide(dividend: number, divisor: number): number {
+  if (divisor === 0) {
+    throw new Error("Divisionen durch 0 sind nicht möglich.")
+  }
   return dividend / divisor;
 }
